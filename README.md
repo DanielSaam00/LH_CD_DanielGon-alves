@@ -48,7 +48,7 @@ Este projeto foi desenvolvido como parte do processo seletivo da Lighthouse. O o
 2. Instale os pacotes necessários:
 
 
-  pip install -r requirements.txt
+   - pip install -r requirements.txt
 
 3. Execute o notebook (notebook.ipynb) para visualizar a análise e testar o modelo.
 
