@@ -1,33 +1,55 @@
 # LH_CD_DanielGoncalves
 
-## Desafio de Machine Learning - Previsão de Nota IMDB
-Este projeto tem como objetivo aplicar técnicas de ciência de dados e aprendizado de máquina para analisar e prever a nota de avaliação de filmes segundo o IMDB. A proposta envolve desde a exploração dos dados até a construção e salvamento de um modelo preditivo.
+## Desafio de Ciência de Dados - Previsão de Nota IMDb
 
-## Objetivos principais:
-Realizar uma análise exploratória dos dados (EDA), identificando padrões, correlações e insights relevantes sobre os filmes.
+Este projeto foi desenvolvido como parte do processo seletivo da Lighthouse. O objetivo é aplicar técnicas de ciência de dados e aprendizado de máquina para analisar um conjunto de dados cinematográficos e construir um modelo preditivo capaz de estimar a nota de avaliação de filmes segundo o IMDb.
 
-Responder perguntas analíticas e criativas, como:
+---
 
- - Qual filme recomendar para uma pessoa desconhecida?
+## Objetivos
 
-- Quais fatores estão relacionados à alta expectativa de faturamento?
+- Realizar uma **análise exploratória dos dados (EDA)**, identificando padrões, correlações e insights relevantes sobre os filmes.
+- Responder às perguntas analíticas e criativas propostas no desafio:
+  - Qual filme você recomendaria para uma pessoa que você não conhece?
+  - Quais fatores estão relacionados com alta expectativa de faturamento?
+  - É possível inferir o gênero do filme a partir da sinopse (`Overview`)?
+  - Como prever a nota do IMDb com base nas variáveis disponíveis?
+- Construir um modelo de **regressão** para prever a nota do IMDb utilizando variáveis como:
+  - `Meta_score`, `Gross`, `No_of_Votes`, `Runtime`, `Genre`, `Overview`, entre outras.
+- Testar o modelo com um exemplo real: **The Shawshank Redemption**.
+- Salvar o modelo treinado em formato `.pkl` para uso posterior.
 
-- É possível inferir o gênero do filme a partir da sinopse (overview)?
+---
 
-- Construir um modelo de regressão para prever a nota do IMDB com base em variáveis como gênero, tempo de duração, número de votos, sinopse, entre outras.
+## Tecnologias e Bibliotecas Utilizadas
 
-- Testar o modelo com um exemplo real: The Shawshank Redemption.
+- **Python**
+- **Pandas**, **NumPy** – manipulação e análise de dados
+- **Scikit-learn** – modelagem preditiva
+- **XGBoost** – modelo de alta performance
+- **Joblib** – salvamento do modelo
+- **Jupyter Notebook** – ambiente de desenvolvimento
 
-- Salvar o modelo treinado em formato .pkl para uso posterior.
+---
 
-## Tecnologias utilizadas:
+## Estrutura do Projeto
 
-- Python
+├── notebook.ipynb # Notebook com EDA, modelagem e respostas ├── modelo_pm.pkl # Modelo treinado salvo em formato .pkl ├── requirements.txt # Lista de pacotes utilizados ├── README.md # Este arquivo
 
-- Pandas, NumPy
 
-- Scikit-learn
+---
 
-- Joblib
+## Como Executar o Projeto
 
-- Jupyter Notebook
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seuusuario/seurepositorio.git
+
+2. Instale os pacotes necessários:
+
+pip install -r requirements.txt
+
+3. Execute o notebook (notebook.ipynb) para visualizar a análise e testar o modelo.
+
+
+
